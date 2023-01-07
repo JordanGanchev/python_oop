@@ -1,8 +1,7 @@
 class Time:
-    # 88/100
     max_hours = 23
     max_minutes = 59
-    max_second = 59
+    max_seconds = 59
 
     def __init__(self, hours, minutes, seconds):
         self.hours = hours
@@ -19,7 +18,7 @@ class Time:
 
     def next_second(self):
         self.seconds += 1
-        if self.seconds > self.max_second:
+        if self.seconds > self.max_seconds:
             self.seconds = 0
             self.minutes += 1
 
