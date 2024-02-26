@@ -57,19 +57,19 @@ class Movie(ABC):
 
     @property
     def age_restriction_error_message(self):
-        return f"{self.type} movies must be restricted for audience under {self.age_restriction} years!"
+        return f"{self.type} movies must be restricted for audience under {self.MIN_AGR_RESTRICTION} years!"
 
-    @abstractmethod
     @property
+    @abstractmethod
     def type(self):
         pass
 
     def details(self):
-        return f'{self.title} -' \
-               f'Title:{self.title},' \
-               f'Year:{self.year},' \
-               f'Age restriction:{self.age_restriction},' \
-               f'Likes:{self.likes},' \
+        return f'{self.type} - ' \
+               f'Title:{self.title}, ' \
+               f'Year:{self.year}, ' \
+               f'Age restriction:{self.age_restriction}, ' \
+               f'Likes:{self.likes}, ' \
                f'Owned by:{self.owner.username}'
 
     @staticmethod
@@ -82,7 +82,7 @@ class Movie(ABC):
 
     @staticmethod
     def validate_owner(owner):
-        if owner is not User:
+        if not isinstance(owner, User):
             raise ValueError("The owner must be an object of type User!")
 
     def validate_age_restriction(self, age_restriction):
