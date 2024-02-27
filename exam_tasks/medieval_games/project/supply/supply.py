@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class Supply(ABC):
+    @abstractmethod
     def __init__(self, name: str, energy: int):
         self.name = name
         self.energy = energy
@@ -26,11 +27,5 @@ class Supply(ABC):
             raise ValueError("Energy cannot be less than zero.")
         self.__energy = value
 
-    @property
-    @abstractmethod
-    def type(self):
-        pass
-
-    @abstractmethod
     def details(self):
-        pass
+        return f"{self.__class__.__name__}: {self.name}, {self.energy}"
