@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0decb811-237b-4349-bb77-43f4fd205758" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/medieval_games.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/medieval_games.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/supply/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/.idea/movie_app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/movie_app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/movie_specification/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/movie_specification/action.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/movie_specification/fantasy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/movie_specification/movie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/movie_specification/thriller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../movie_app/project/utils/validators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_movie/project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_movie/project/movie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_movie/project/test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_movie/project/test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/.idea/test_plantation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/project/plantation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/project/test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_plantation/project/test/test_plantation.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2cz1dxk9oqoDeiSzWE1bgIB95eg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/projects/python_oop/exam_tasks_24/system_split"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0decb811-237b-4349-bb77-43f4fd205758" name="Changes" comment="" />
+      <created>1709099686386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709099686386</updated>
+    </task>
+    <servers />
+  </component>
+</project>
