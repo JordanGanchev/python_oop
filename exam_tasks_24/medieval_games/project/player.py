@@ -2,7 +2,7 @@ from project.supply.supply import Supply
 
 
 class Player:
-    players_names = []
+    players_names = set()
 
     def __init__(self, name: str, age: int, stamina: int = 100):
         self.name = name
@@ -19,7 +19,7 @@ class Player:
             raise ValueError("Name not valid!")
         elif value in Player.players_names:
             raise Exception(f"Name {value} is already used!")
-        Player.players_names.append(value)
+        Player.players_names.add(value)
         self.__name = value
 
     @property
