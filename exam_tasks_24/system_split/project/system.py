@@ -38,8 +38,37 @@ class System:
 
     @staticmethod
     def analyze():
-        pass
+        total_sum_memory_soft = 0
+        for obj in System._software:
+            total_sum_memory_soft += obj.memory_consumption
+
+        total_sum_memory_hard = 0
+        for obj in System._hardware:
+            total_sum_memory_hard += obj.memory
+
+        total_sum_capacity_soft = 0
+        for obj in System._software:
+            total_sum_capacity_soft += obj.capacity_consumption
+
+        total_sum_capacity_hard = 0
+        for obj in System._hardware:
+            total_sum_capacity_hard += obj.capacity
+        return f"System Analysis" '\n' \
+               f"Hardware Components: {len(System._hardware)}" '\n' \
+               f"Software Components: {len(System._software)}"  '\n' \
+               f"Total Operational Memory: {total_sum_memory_soft} / {total_sum_memory_hard}" '\n' \
+               f"Total Capacity Taken: {total_sum_capacity_soft} / {total_sum_capacity_hard}" \
 
     @staticmethod
     def system_split():
-        pass
+        list_components = []
+        for components in System._hardware:
+            list_components.append(components.name)
+        return f"Hardware Component - {', '.join(list_components)}" '\n' \
+               # f"Express Software Components: {number of the installed express software components}" '\n' \
+               # f"Light Software Components: {number of the installed light software components}" '\n' \
+               # f"Memory Usage: {total memory used of all installed software components} / {total memory of the hardware}" '\n' \
+               # f"Capacity Usage: {total capacity used of all installed software components } / {total capacity of the hardware}" '\n' \
+               # f"Type: {hardware_type}" '\n' \
+               # f"Software Components: {names of all software components separated by ', '} (or 'None' if no software components)"
+
