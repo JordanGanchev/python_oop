@@ -8,6 +8,7 @@ from project.hardware.power_hardware import PowerHardware
 from project.software.software import Software
 
 
+
 class System:
     _hardware: List[Hardware] = []
     _software: List[Software] = []
@@ -24,8 +25,11 @@ class System:
 
     @staticmethod
     def register_express_software(hardware_name: str, name: str, capacity_consumption: int, memory_consumption: int):
-        comp_software = ExpressSoftware(hardware_name, capacity_consumption, memory_consumption)
-        System._software.append(comp_software)
+        for name_hard in System._hardware:
+            if not name_hard.name == name:
+                return "Hardware does not exist"
+        # comp_software = ExpressSoftware(hardware_name, capacity_consumption, memory_consumption)
+        # System._software.append(comp_software)
 
     @staticmethod
     def register_light_software(hardware_name: str, name: str, capacity_consumption: int, memory_consumption: int):
@@ -43,3 +47,4 @@ class System:
     @staticmethod
     def system_split():
         pass
+
