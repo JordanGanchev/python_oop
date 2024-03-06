@@ -1,8 +1,11 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+from project.decoration.decoration_repository import DecorationRepository
+
 
 class BaseAquarium(ABC):
+    @abstractmethod
     def __init__(self, name: str, capacity: int):
         self.name = name
         self.capacity = capacity
@@ -19,23 +22,33 @@ class BaseAquarium(ABC):
             raise ValueError("Aquarium name cannot be an empty string.")
         self.__name = value
 
-    def calculate_comfort(self):
-        pass
+    @staticmethod
+    def calculate_comfort():
+        decor = next((sum(d.comfort) for d in DecorationRepository.DECOR), None)
+        return decor[0]
 
     def add_fish(self, fish):
-        pass
+        if len(self.fish) > self.capacity:
+            return "Not enough capacity."
+        self.decorations.append(fish)
+        return f"Successfully added {fish.__class__.__name__} to {fish.name}."
 
     def remove_fish(self, fish):
-        pass
+        self.fish.remove(fish)
 
     def add_decoration(self, decoration):
-        pass
+        self.decorations.append(decoration)
 
     def feed(self):
         pass
-    
+
     def __str__(self):
-        pass
+        result = ([n for n in self.fish], None)
+
+        return f"{self.name}:\n"\
+               f"Fish: {result}\n"\
+               f"Decorations: {len(self.decorations)}\n"\
+               f"Comfort: {self.calculate_comfort()}"
 
 
 

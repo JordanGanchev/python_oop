@@ -2,11 +2,14 @@ from typing import List
 
 
 class DecorationRepository:
+    DECOR = []
+
     def __init__(self):
         self.decorations: List = []
 
     def add(self, decoration):
         self.decorations.append(decoration)
+        self.DECOR.append(decoration)
 
     def remove(self, decoration):
         if decoration in self.decorations:
