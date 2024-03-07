@@ -30,10 +30,18 @@ class Controller:
         return f"Successfully added {decoration_type}."
 
     def insert_decoration(self, aquarium_name: str, decoration_type: str):
-        pass
+        decoration = next((d for d in self.decorations_repository if decoration_type == d.__class__.__name__), None)
+        aquarium = next((a for a in self.aquariums if aquarium_name == a.name))
+        if decoration and aquarium:
+            self.aquariums.append(decoration)
+            self.decorations_repository.remove(decoration)
+            return f"Successfully added {decoration_type} to {aquarium_name}."
+        return f"There isn't a decoration of type {decoration_type}."
 
     def add_fish(self, aquarium_name: str, fish_type: str, fish_name: str, fish_species: str, price: float):
-        pass
+        if fish_type not in self.VALID_TYPE_AQUARIUM:
+            return "There isn't a fish of type {fish_type}."
+        
 
     def feed_fish(self, aquarium_name: str):
         pass
