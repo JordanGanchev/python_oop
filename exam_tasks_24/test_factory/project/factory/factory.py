@@ -11,12 +11,12 @@ class Factory(ABC):
     @abstractmethod
     def add_ingredient(self, type, quantity):
         """Add products to the factory"""
-        pass
+        self.ingredients[type] = quantity
 
     @abstractmethod
     def remove_ingredient(self, type, quantity):
         """Remove products from the factory"""
-        pass
+        self.ingredients.pop(type)
 
     def can_add(self, value):
         return self.capacity - sum(self.ingredients.values()) - value >= 0
