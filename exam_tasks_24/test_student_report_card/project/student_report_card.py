@@ -55,3 +55,14 @@ class StudentReportCard:
                  f"----------\n" \
                  f"{self.average_grade_for_all_subjects()}"
         return report
+
+
+# student = StudentReportCard('dan', 12)
+# student.grades_by_subject['svilen'] = []
+# student.grades_by_subject['svilen'].append(5.00)
+# student.grades_by_subject['gosho'] = []
+# student.grades_by_subject['gosho'].append(6.00)
+#
+# # print(student.grades_by_subject)
+# # print(student.average_grade_by_subject())
+# print(student.__repr__())
