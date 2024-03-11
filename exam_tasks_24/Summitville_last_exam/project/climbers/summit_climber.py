@@ -3,18 +3,22 @@ from project.peaks.base_peak import BasePeak
 
 
 class SummitClimber(BaseClimber):
-    STRENGTH = 150
+    initial_strength = 150
 
     def __init__(self, name: str):
-        super().__init__(name, self.STRENGTH)
+        super().__init__(name, self.initial_strength)
 
     def can_climb(self):
-        if self.strength >= 75:
-            return True
+        return self.strength >= 75
 
-    def climb(self, peak : BasePeak):
-        self.conquered_peaks.append(peak)
-        if peak.__class__.__name__ == "Advanced":
-            return (self.strength - 30) * 1.3
+    def climb(self, peak: BasePeak):
+        if peak.difficulty_level == "Advanced":
+            self.strength -= 30 * 1.3
         else:
-            return (self.strength - 30) * 2,5
+            self.strength -= 30 * 2.5
+        self.conquered_peaks.append(peak.name)
+
+    # def climb(self, peak: BasePeak):
+    #     difficulty_multiplier = 1.3 if peak.difficulty_level == "Advanced" else 2.5
+    #     self.strength -= 30.0 * difficulty_multiplier
+    #     self.conquered_peaks.append(peak.name)

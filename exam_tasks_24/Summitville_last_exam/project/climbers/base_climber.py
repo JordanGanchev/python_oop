@@ -1,15 +1,15 @@
 from abc import ABC, abstractmethod
+from typing import List
 
 from project.peaks.base_peak import BasePeak
 
 
 class BaseClimber(ABC):
-    conquered_peaks = []
-    is_prepared = True
-
     def __init__(self, name: str, strength: float):
         self.name = name
         self.strength = strength
+        self.conquered_peaks: List = []
+        self.is_prepared: bool = True
 
     @property
     def name(self):
@@ -40,9 +40,8 @@ class BaseClimber(ABC):
         pass
 
     def rest(self):
-        self.strength += 15
+        self.strength += 15.0
 
     def __str__(self):
-        return f"{__class__.__name__}: /// Climber name: {self.name} * Left strength: {self.strength} * Conquered peaks: {self.conquered_peaks} ///"
-
-
+        conquered_peaks = sorted(self.conquered_peaks)
+        return f"{type(self).__name__}: /// Climber name: {self.name} * Left strength: {self.strength:.1f} * Conquered peaks: {', '.join(conquered_peaks)} ///"
