@@ -13,11 +13,12 @@ class ArcticClimber(BaseClimber):
             self.is_prepared = False
 
     def climb(self, peak: BasePeak):
-        if peak.difficulty_level  == "Extreme":
+        self.conquered_peaks.append(peak)
+        if peak.difficulty_level == "Extreme":
             return (self.strength - 20) * 2
         else:
             return (self.strength - 20) * 1.5
-        self.conquered_peaks.append(peak)
+
 
 
 

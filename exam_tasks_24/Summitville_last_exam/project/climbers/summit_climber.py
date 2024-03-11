@@ -13,7 +13,7 @@ class SummitClimber(BaseClimber):
             return True
 
     def climb(self, peak : BasePeak):
-        BaseClimber.conquered_peaks.append(peak.name)
+        self.conquered_peaks.append(peak)
         if peak.__class__.__name__ == "Advanced":
             return (self.strength - 30) * 1.3
         else:
