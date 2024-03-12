@@ -24,6 +24,18 @@ class TestClimbingRobot(unittest.TestCase):
         self.climb.installed_software.append({'capacity_consumption': 10, 'memory_consumption': 20})
         self.assertEqual(10, self.climb.get_used_capacity())
 
+    def test_get_available_capacity(self):
+        self.climb.installed_software.append({'capacity_consumption': 10, 'memory_consumption': 20})
+        self.assertEqual(90, self.climb.get_available_capacity())
+
     def test_get_used_memory(self):
         self.climb.installed_software.append({'capacity_consumption': 10, 'memory_consumption': 20})
         self.assertEqual(20, self.climb.get_used_memory())
+
+    def test_get_available_memory(self):
+        self.climb.installed_software.append({'capacity_consumption': 10, 'memory_consumption': 20})
+        self.assertEqual(980, self.climb.get_available_memory())
+
+    def test_install_software(self):
+        self.climb.installed_software().append({'capacity_consumption': 10, 'memory_consumption': 20})
+
