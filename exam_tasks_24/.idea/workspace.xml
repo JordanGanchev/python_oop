@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e94c3b3b-b719-43f6-a09f-273f504e9da3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/bank_system/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_climbing_robot_last_exam/project/test/test_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/.idea/bank_system.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/.idea/bank_system.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/project/bank_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/project/bank_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/project/clients/adult.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/project/clients/adult.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/project/clients/base_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/project/clients/base_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/project/clients/student.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/project/clients/student.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/project/loans/base_loan.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/project/loans/base_loan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/project/loans/mortgage_loan.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/project/loans/mortgage_loan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bank_system/project/loans/student_loan.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_system/project/loans/student_loan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_climbing_robot_last_exam/project/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_climbing_robot_last_exam/project/test/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_climbing_robot_last_exam/project/test/test.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2dcR54ALVyzPZGt930N32WerriW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/projects/python_oop/exam_tasks_24/bank_system"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e94c3b3b-b719-43f6-a09f-273f504e9da3" name="Changes" comment="" />
+      <created>1710305194050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710305194050</updated>
+      <workItem from="1710305195321" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
