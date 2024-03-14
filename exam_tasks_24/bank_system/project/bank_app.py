@@ -1,5 +1,7 @@
 from typing import List
 
+from project.clients.adult import Adult
+from project.clients.student import Student
 from project.loans.mortgage_loan import MortgageLoan
 from project.loans.student_loan import StudentLoan
 
@@ -7,6 +9,7 @@ from project.loans.student_loan import StudentLoan
 class BankApp:
 
     VALID_TYPE_LOANS = {"StudentLoan": StudentLoan, "MortgageLoan": MortgageLoan}
+    VALID_TYPE_CLIENTS = {"Student": Student, "Adult": Adult}
 
     def __init__(self, capacity: int):
         self.capacity: int = capacity
@@ -21,10 +24,17 @@ class BankApp:
         return f"{loan_type} was successfully added."
 
     def add_client(self, client_type: str, client_name: str, client_id: str, income: float):
-        pass
+        if client_type not in self.VALID_TYPE_CLIENTS:
+            raise Exception("Invalid client type!")
+        if len(self.clients) > self.capacity:
+            return "Not enough bank capacity."
+        new_client = self.VALID_TYPE_CLIENTS[client_type](client_name, client_id, income)
+        self.clients.append(new_client)
+        return f"{client_type} was successfully added."
 
     def grant_loan(self, loan_type: str, client_id: str):
-        pass
+        if loan_type not in self.VALID_TYPE_LOANS:
+            
 
     def remove_client(self, client_id: str):
         pass
