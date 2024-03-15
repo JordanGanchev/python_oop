@@ -45,4 +45,18 @@ class TestSecondHandCar(unittest.TestCase):
         self.assertEqual(30, self.car.price)
         self.assertEqual(['s80'], self.car.repairs)
 
-    
+    def test_gt_if_car_type_not_equal_value(self):
+        car1 = SecondHandCar('volvo', 'xc90', 10000, 100000)
+        car2 = SecondHandCar('volvo', 's80', 10000, 100000)
+        result = car1 > car2
+        self.assertEqual('Cars cannot be compared. Type mismatch!', result)
+
+    def test_gt_if_car_type_equal_value(self):
+        car1 = SecondHandCar('volvo', 'xc90', 10000, 100000)
+        car2 = SecondHandCar('volvo', 's80', 10000, 100000)
+        result = car1 > car2
+        self.assertTrue(self.__gt__, result)
+
+    def test_str_method(self):
+        self.assertEqual(f"Model volvo | Type xc90 | Milage 10000km\n"
+                         f"Current price: 100000.00 | Number of Repairs: 0", self.car.__str__())
