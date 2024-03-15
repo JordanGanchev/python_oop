@@ -34,7 +34,8 @@ class BankApp:
 
     def grant_loan(self, loan_type: str, client_id: str):
         if loan_type not in self.VALID_TYPE_LOANS:
-            
+            raise Exception("Inappropriate loan type!")
+
 
     def remove_client(self, client_id: str):
         pass
