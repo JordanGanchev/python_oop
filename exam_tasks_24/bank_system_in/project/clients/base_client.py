@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+from project.loans.base_loan import BaseLoan
+
 
 class BaseClient(ABC):
     def __init__(self, name: str, client_id: str, income: float, interest: float):
@@ -8,7 +10,7 @@ class BaseClient(ABC):
         self.client_id = client_id
         self.income = income
         self.interest = interest
-        self.loans: List = []
+        self.loans: List[BaseLoan] = []
 
     @property
     def name(self):
