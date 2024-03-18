@@ -5,6 +5,7 @@ from project.car.car import Car
 from project.car.muscle_car import MuscleCar
 from project.car.sports_car import SportsCar
 from project.driver import Driver
+from project.race import Race
 
 
 class Controller:
@@ -26,13 +27,26 @@ class Controller:
         return f"{car_type} {model} is created."
 
     def create_driver(self, driver_name: str):
-        pass
+        driver = next((d for d in self.drivers if d.name == driver_name), None)
+        if driver:
+            raise Exception(f"Driver {driver_name} is already created!")
+        new_driver = Driver(driver_name)
+        self.drivers.append(new_driver)
+        return f"Driver {driver_name} is created."
 
     def create_race(self, race_name: str):
-        pass
+        race = next((r for r in self.races if r.name == race_name), None)
+        if race:
+            raise Exception(f"Race {race_name} is already created!")
+        new_race = Race(race_name)
+        self.races.append(new_race)
+        return f"Race {race_name} is created."
 
     def add_car_to_driver(self, driver_name: str, car_type: str):
-        pass
+        driver = next((n for n in self.drivers if n.name == driver_name), None)
+        if driver is None:
+            raise Exception(f"Driver {driver_name} could not be found!")
+
 
     def add_driver_to_race(self, race_name: str, driver_name: str):
         pass
