@@ -46,10 +46,25 @@ class Controller:
         driver = next((n for n in self.drivers if n.name == driver_name), None)
         if driver is None:
             raise Exception(f"Driver {driver_name} could not be found!")
-
+        car = next((c for c in self.cars if c.__class__.__name__ == car_type or c.is_taken is True), None)
+        if car is None:
+            raise Exception(f"Car {car_type} could not be found!")
 
     def add_driver_to_race(self, race_name: str, driver_name: str):
-        pass
+        race = next((r for r in self.races if r.name == race_name), None)
+        if race is None:
+            raise Exception(f"Race {race_name} could not be found!")
+        driver = next((d for d in self.drivers if d.name == driver_name), None)
+        if driver is None:
+            raise Exception(f"Driver {driver_name} could not be found!")
+        if driver.car is None:
+            raise f"Driver {driver_name} could not participate in the race!"
 
     def start_race(self, race_name: str):
-        pass
+        race = next((r for r in self.races if r.name == race_name), None)
+        if race is None:
+            raise Exception(f"Race {race_name} could not be found!")
+        if len(self.races) < 3:
+            raise Exception(f"Race {race_name} cannot start with less than 3 participants!")
+
+
