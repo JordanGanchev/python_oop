@@ -15,6 +15,8 @@ class Controller:
         self.cars: List[Car] = []
         self.drivers: List[Driver] = []
         self.races: list[race] = []
+        self.driver_to_car = {}
+        self.driver_to_race = {}
 
     def create_car(self, car_type: str, model: str, speed_limit: int):
         if car_type not in self.VALID_CAR_TYPE:
@@ -40,11 +42,13 @@ class Controller:
         return f"Race {race_name} is created."
 
     def add_car_to_driver(self, driver_name: str, car_type: str):
-        if self.__get_name_driver(driver_name) is None:
+        driver = self.__get_name_driver(driver_name)
+        if driver is None:
             raise Exception(f"Driver {driver_name} could not be found!")
         car = next((c for c in self.cars if c.__class__.__name__ == car_type or c.is_taken is True), None)
         if car is None:
             raise Exception(f"Car {car_type} could not be found!")
+        self.driver_to_car[car] = driver
 
     def add_driver_to_race(self, race_name: str, driver_name: str):
         if self.__get_name_race(race_name) is None:
