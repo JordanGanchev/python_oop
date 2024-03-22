@@ -33,7 +33,12 @@ class Musician(ABC):
         self.__age = value
 
     def learn_new_skill(self, new_skill: str):
-        if new_skill not in Find_somewhere.find_type(new_skill):
+        type = Find_somewhere().find_type(new_skill)
+        if type is None:
             raise ValueError(f"{new_skill} is not a needed skill!")
         if new_skill in self.skills:
             raise Exception(f"{new_skill} is already learned!")
+        return f"{self.name} learned to {new_skill}."
+
+
+

@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9525164-0501-4d3f-ad5b-4d4a153dba7c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/.idea/concert_tracker_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/.idea/concert_tracker_app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/project/band_members/musician.py" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/project/band_members/musician.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/project/skills_to_musician.py" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/project/skills_to_musician.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,15 +28,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/python_oop/exam_tasks_24/christmas_races&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/projects/python_oop/exam_tasks_24/christmas_races"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bank_system" />
@@ -73,11 +77,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="959883e2-2c37-4f62-9b19-88d544d5aa8d" name="Changes" comment="" />
+      <changelist id="c9525164-0501-4d3f-ad5b-4d4a153dba7c" name="Changes" comment="" />
       <created>1710655816785</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710655816785</updated>
+      <workItem from="1711089569689" duration="5000" />
     </task>
     <servers />
   </component>
