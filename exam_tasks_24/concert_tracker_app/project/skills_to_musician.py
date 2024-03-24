@@ -21,4 +21,7 @@ class Find_somewhere:
                 return key
         return None
 
-
+    def find_skills(self, type_of_musician):
+        for key, value in self.valid_skills.items():
+            if type_of_musician == key:
+                return (key, value)
