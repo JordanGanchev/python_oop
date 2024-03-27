@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9525164-0501-4d3f-ad5b-4d4a153dba7c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/.idea/concert_tracker_app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/.idea/concert_tracker_app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/project/band_members/musician.py" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/project/band_members/musician.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concert_tracker_app/project/skills_to_musician.py" beforeDir="false" afterPath="$PROJECT_DIR$/../concert_tracker_app/project/skills_to_musician.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/christmas_pastry_shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/christmas_pastry_shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/open_booth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/open_booth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/private_booth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/private_booth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/christmas_pastry_shop_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/christmas_pastry_shop_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/delicacies/stolen.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/delicacies/stolen.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,16 +30,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/projects/python_oop/exam_tasks_24/christmas_races"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/python_oop/exam_tasks_24/christmas_races&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bank_system" />
@@ -83,8 +85,12 @@
       <option name="presentableId" value="Default" />
       <updated>1710655816785</updated>
       <workItem from="1711089569689" duration="5000" />
+      <workItem from="1711450418406" duration="9000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/bank_system$main.coverage" NAME="main Coverage Results" MODIFIED="1710507050547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

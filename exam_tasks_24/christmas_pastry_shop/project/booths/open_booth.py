@@ -1,4 +1,5 @@
 from project.booths.booth import Booth
+from project.delicacies.delicacy import Delicacy
 
 
 class OpenBooth(Booth):
@@ -7,5 +8,5 @@ class OpenBooth(Booth):
         super().__init__(booth_number, capacity)
 
     def reserve(self, number_of_people: int):
+        Delicacy.price = number_of_people * 2.50
         self.is_reserved = True
-        return number_of_people*2.5
