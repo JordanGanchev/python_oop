@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9525164-0501-4d3f-ad5b-4d4a153dba7c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/christmas_pastry_shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/christmas_pastry_shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/open_booth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/open_booth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/private_booth.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/booths/private_booth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/christmas_pastry_shop_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/christmas_pastry_shop_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../christmas_pastry_shop/project/delicacies/stolen.py" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas_pastry_shop/project/delicacies/stolen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +81,8 @@
       <updated>1710655816785</updated>
       <workItem from="1711089569689" duration="5000" />
       <workItem from="1711450418406" duration="9000" />
+      <workItem from="1711604151860" duration="32000" />
+      <workItem from="1711604472940" duration="5000" />
     </task>
     <servers />
   </component>

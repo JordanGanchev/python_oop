@@ -51,8 +51,9 @@ class ChristmasPastryShopApp:
         delicacy = next((d for d in self.delicacies if d.name == delicacy_name), None)
         if not delicacy:
             raise Exception(f"No {delicacy_name} in the pastry shop!")
-        git = booth.__class__.__name__()
+        booth.delicacy_orders.append(delicacy)
         pass
+
 
     def leave_booth(self, booth_number: int):
         pass
