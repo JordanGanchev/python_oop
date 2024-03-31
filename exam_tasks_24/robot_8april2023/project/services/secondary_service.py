@@ -11,7 +11,9 @@ class SecondaryService(BaseService):
                    f"Robots: none"
         result = []
         for el in self.robots:
-            result.append(el)
+            result.append(el.name)
 
-        return f"{self.name} Secondary Service:\n" \
-               f"Robots: {' '.join([e for e in result])}"
+        total_exit = ""
+        total_exit += f"{self.name} Secondary Service:\n" \
+                      f"Robots: {' '.join([e for e in result])}"
+        return total_exit

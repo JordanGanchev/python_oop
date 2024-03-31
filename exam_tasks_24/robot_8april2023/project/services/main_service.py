@@ -6,12 +6,14 @@ class MainService(BaseService):
         super().__init__(name, 30)
 
     def details(self):
-        if not self.robots:
+        if not self.robots.__class__.__name__:
             return f"{self.name} Main Service:\n" \
                    f"Robots: none"
         result = []
         for el in self.robots:
-            result.append(el)
+            result.append(el.name)
 
-        return f"{self.name} Main Service:\n" \
-               f"Robots: {' '.join([e for e in result])}"
+        total_exit = ""
+        total_exit += f"{self.name} Main Service:\n" \
+                      f"Robots: {' '.join([e for e in result])}"
+        return total_exit
