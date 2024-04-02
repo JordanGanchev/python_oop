@@ -1,4 +1,4 @@
-from system import System
+from project.system import System
 
 
 def zero_test():
