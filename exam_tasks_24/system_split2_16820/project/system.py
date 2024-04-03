@@ -54,9 +54,12 @@ class System:
 
     @staticmethod
     def analyze():
-        pass
-
-    @staticmethod
+        total_memory = [sum(mc) for mc in System.software.memory_consumption]
+        return "System Analysis\n" \
+               f"Hardware Components: {len(System.hardware)}\n" \
+               f"Software Components: {len(System.software)}\n" \
+               f"Total Operational Memory: {total memory consumption for all registered software components} / {total memory for all registered hardware components}\n" \
+               f"Total Capacity Taken: {total capacity consumption for all registered software components} / {total capacity of all registered hardware components}"    @staticmethod
     def system_split():
         pass
 
