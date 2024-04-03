@@ -1,27 +1,66 @@
+from project.hardware.heavy_hardware import HeavyHardware
+from project.hardware.power_hardware import PowerHardware
+from project.software.express_software import ExpressSoftware
+from project.software.light_software import LightSoftware
+
+
 class System:
+    hardware = []
+    software = []
 
-    def __init__(self):
-        self.hardware = []
-        self.software = []
+    @staticmethod
+    def register_power_hardware(name: str, capacity: int, memory: int):
+        heavy = HeavyHardware(name, capacity, memory)
+        System.hardware.append(heavy)
 
-    def register_power_hardware(self, name: str, capacity: int, memory: int):
+    @staticmethod
+    def register_heavy_hardware(name: str, capacity: int, memory: int):
+        pover = PowerHardware(name, capacity, memory)
+        System.software.append(pover)
+
+    @staticmethod
+    def register_express_software(hardware_name: str, name: str, capacity_consumption: int, memory_consumption: int):
+        try:
+            hardware = [h for h in System.hardware if h.name == hardware_name][0]
+            software = ExpressSoftware(name, capacity_consumption, memory_consumption)
+            hardware.install(software)
+            System.software.append(software)
+        except IndexError:
+            return "Hardware does not exist"
+        except Exception as ex:
+            return str(ex)
+
+    @staticmethod
+    def register_light_software(hardware_name: str, name: str, capacity_consumption: int, memory_consumption: int):
+        try:
+            hardware = [h for h in System.hardware if h.name == hardware_name][0]
+            software = LightSoftware(name, capacity_consumption, memory_consumption)
+            hardware.install(software)
+            System.software.append(software)
+        except IndexError:
+            return "Hardware does not exist"
+        except Exception as ex:
+            return str(ex)
+
+    @staticmethod
+    def release_software_component(hardware_name: str, software_name: str):
+        hardware = next((h for h in System.hardware if h.name == hardware_name), None)
+        software = next((s for s in System.hardware if s.name == software_name), None)
+        if hardware is None or software is None:
+            return "Some of the components do not exist"
+        hardware.uninstall(software)
+        System.software.remove(software)
+
+
+    @staticmethod
+    def analyze():
         pass
 
-    def register_heavy_hardware(self, name: str, capacity: int, memory: int):
+    @staticmethod
+    def system_split():
         pass
 
-    def register_express_software(self, hardware_name: str, name: str, capacity_consumption: int, memory_consumption: int):
-        pass
-
-    def register_light_software(self, hardware_name: str, name: str, capacity_consumption: int, memory_consumption: int):
-        pass
-
-    def release_software_component(self, hardware_name: str, software_name: str):
-        pass
-
-    def analyze(self):
-        pass
-
-    def system_split(self):
-        pass
+    # @staticmethod
+    # def __find_name_software(name):
+    # return next((n for n in System.software if n.name == name), None)
 
