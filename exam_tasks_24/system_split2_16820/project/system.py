@@ -1,12 +1,16 @@
+from typing import List
+
+from project.hardware.hardware import Hardware
 from project.hardware.heavy_hardware import HeavyHardware
 from project.hardware.power_hardware import PowerHardware
 from project.software.express_software import ExpressSoftware
 from project.software.light_software import LightSoftware
+from project.software.software import Software
 
 
 class System:
-    _hardware = []
-    _software = []
+    _hardware: List[Hardware] = []
+    _software: List[Software] = []
 
     @staticmethod
     def register_power_hardware(name: str, capacity: int, memory: int):
@@ -48,21 +52,30 @@ class System:
             hardware.uninstall(software)
         except IndexError:
             return "Some of the components do not exist"
-
+        except Exception as ex:
+            return str(ex)
 
     @staticmethod
     def analyze():
-        total_memory = [sum(mc) for mc in System.software.memory_consumption]
         return "System Analysis\n" \
-               f"Hardware Components: {len(System.hardware)}\n" \
-               f"Software Components: {len(System.software)}\n" \
-               f"Total Operational Memory: {total memory consumption for all registered software components} / {total memory for all registered hardware components}\n" \
-               f"Total Capacity Taken: {total capacity consumption for all registered software components} / {total capacity of all registered hardware components}"
+               f"Hardware Components: {len(System._hardware)}\n" \
+               f"Software Components: {len(System._software)}\n" \
+               f"Total Operational Memory: {sum([h.used_memory for h in System._hardware])} / {sum([h.memory for h in System._hardware])}\n" \
+               f"Total Capacity Taken: {sum([h.used_capacity for h in System._hardware])} / {sum([h.capacity for h in System._hardware])}"
+
     @staticmethod
     def system_split():
-        pass
-
-    # @staticmethod
-    # def __find_name_software(name):
-    # return next((n for n in System.software if n.name == name), None)
+        result = ""
+        for h in System._hardware:
+            result += f"Hardware Component - {h.name}\n"
+            express_software_components = [s for s in h.software_components if s.__class__.__name__ == "ExpressSoftware"]
+            result += f"Express Software Components: {len(express_software_components)}\n"
+            light_software_components = [s for s in h.software_components if s.__class__.__name__ == "LightSoftware"]
+            result += f"Light Software Components: {len(light_software_components)}\n"
+            result += f"Memory Usage: {sum([s.memory_consumption for s in h.software_components])} / {h.memory}\n"
+            result += f"Capacity Usage: {sum([s.capacity_consumption for s in h.software_components])} / {h.capacity}\n"
+            result += f"Type: {h.hardware_type}\n"
+            names = ', '.join([s.name for s in h.software_components])
+            result += f"Software Components: {names if names else None}\n"
+        return result
 
