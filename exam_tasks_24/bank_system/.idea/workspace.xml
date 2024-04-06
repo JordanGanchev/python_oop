@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9525164-0501-4d3f-ad5b-4d4a153dba7c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../system_split2_16820/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../system_split2_16820/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../system_split2_16820/.idea/system_split2_16820.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../system_split2_16820/.idea/system_split2_16820.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../system_split2_16820/project/system.py" beforeDir="false" afterPath="$PROJECT_DIR$/../system_split2_16820/project/system.py" afterDir="false" />
-    </list>
+    <list default="true" id="c9525164-0501-4d3f-ad5b-4d4a153dba7c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,16 +23,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/python_oop/exam_tasks_24/christmas_races&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/projects/python_oop/exam_tasks_24/christmas_races",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="bank_system" />
@@ -86,6 +86,7 @@
       <workItem from="1711604151860" duration="32000" />
       <workItem from="1711604472940" duration="5000" />
       <workItem from="1712229376486" duration="6000" />
+      <workItem from="1712292783266" duration="598000" />
     </task>
     <servers />
   </component>
