@@ -34,7 +34,6 @@ class FoodOrdersApp:
             return meal.details()
 
     def add_meals_to_shopping_cart(self, client_phone_number: str, **meal_names_and_quantities):
-        name_meal, quantity = meal_names_and_quantities.items()
         pass
 
     def cancel_order(self, client_phone_number: str):

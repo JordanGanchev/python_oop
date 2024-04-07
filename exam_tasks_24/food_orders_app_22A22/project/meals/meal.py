@@ -1,7 +1,8 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Meal(ABC):
+
     def __init__(self, name: str, price: float, quantity: int):
         self.name = name
         self.price = price
@@ -27,5 +28,6 @@ class Meal(ABC):
             raise ValueError("Invalid price!")
         self._price = value
 
+    @abstractmethod
     def details(self):
         pass
