@@ -34,7 +34,19 @@ class FoodOrdersApp:
             return meal.details()
 
     def add_meals_to_shopping_cart(self, client_phone_number: str, **meal_names_and_quantities):
-        pass
+        if len(self.menu) < 5:
+            raise Exception("The menu is not ready!")
+        client = next((t for t in self.clients_list if t.phone_number == client_phone_number), None)
+        if client is None:
+            Client(client_phone_number)
+
+        for name_meal, quantity in meal_names_and_quantities.items():
+            meal = next((m for m in self.menu if m.name == name_meal), None)
+            if meal is None:
+                raise Exception(f"{name_meal} is not on the menu!")
+            if meal.quantity < quantity:
+                raise Exception(f"Not enough quantity of {meal.__class__.__name__}: {name_meal}!")
+
 
     def cancel_order(self, client_phone_number: str):
         pass
