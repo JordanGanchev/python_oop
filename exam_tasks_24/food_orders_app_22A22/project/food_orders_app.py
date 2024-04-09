@@ -8,6 +8,7 @@ from project.meals.starter import Starter
 
 
 class FoodOrdersApp:
+    receipt_id = 0
     VALID_MEALS = {"Starter": Starter, "MainDish": MainDish, "Dessert": Dessert}
 
     def __init__(self):
@@ -47,12 +48,22 @@ class FoodOrdersApp:
             if meal.quantity < quantity:
                 raise Exception(f"Not enough quantity of {meal.__class__.__name__}: {name_meal}!")
 
-
     def cancel_order(self, client_phone_number: str):
-        pass
+        client = next((c for c in self.clients_list if c.phone_number == client_phone_number), None)
+        if not client.shopping_cart:
+            raise Exception("There are no ordered meals!")
+        client.shopping_cart = []
+        client.bill = 0.0
 
     def finish_order(self, client_phone_number: str):
-        pass
+        client = next((c for c in self.clients_list if c.phone_number == client_phone_number), None)
+        if not client.shopping_cart:
+            raise Exception("There are no ordered meals!")
+        client.shopping_cart = []
+        client.bill = 0.0
+        self.receipt_id += 1
+        total_paid_money = 0
+        return f"Receipt #{self.receipt_id} with total amount of {total_paid_money} was successfully paid for {client_phone_number}."
 
     def __str__(self):
         return f"Food Orders App has {len(self.menu)} meals on the menu and {len(self.clients_list)} clients."
