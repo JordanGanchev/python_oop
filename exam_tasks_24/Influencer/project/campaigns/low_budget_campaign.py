@@ -1,11 +1,23 @@
+# from project.campaigns.base_campaign import BaseCampaign
+#
+#
+# class LowBudgetCampaign(BaseCampaign):
+#     def __init__(self, campaign_id: int, brand: str, required_engagement: float):
+#         super().__init__(campaign_id, brand, 2500.0, required_engagement)
+#
+#     def check_eligibility(self, engagement_rate: float):
+#         if engagement_rate >= 90:
+#             return True
+#         return False
+
 from project.campaigns.base_campaign import BaseCampaign
 
 
 class LowBudgetCampaign(BaseCampaign):
+    LOW_BUDGET_CAMPAIGN = 2500.0
+
     def __init__(self, campaign_id: int, brand: str, required_engagement: float):
-        super().__init__(campaign_id, brand, 2500.0, required_engagement)
+        super().__init__(campaign_id, brand, self.LOW_BUDGET_CAMPAIGN, required_engagement)
 
     def check_eligibility(self, engagement_rate: float):
-        if engagement_rate >= 90:
-            return True
-        return False
+        return engagement_rate >= self.required_engagement * 0.9  # Example: 10% lower than required

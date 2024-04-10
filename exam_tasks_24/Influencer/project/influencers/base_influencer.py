@@ -27,7 +27,7 @@ class BaseInfluencer(ABC):
 
     @followers.setter
     def followers(self, value):
-        if value <= 0:
+        if value < 0:
             raise ValueError("Followers must be a non-negative integer!")
         self._followers = value
 
