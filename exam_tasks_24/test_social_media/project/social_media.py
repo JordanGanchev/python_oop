@@ -7,6 +7,7 @@ class SocialMedia:
         self._content_type = content_type
         self._posts = []
 
+
     @property
     def platform(self):
         return self._platform
