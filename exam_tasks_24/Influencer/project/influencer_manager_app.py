@@ -1,7 +1,9 @@
 from typing import List
 
+from project.campaigns.base_campaign import BaseCampaign
 from project.campaigns.high_budget_campaign import HighBudgetCampaign
 from project.campaigns.low_budget_campaign import LowBudgetCampaign
+from project.influencers.base_influencer import BaseInfluencer
 from project.influencers.premium_influencer import PremiumInfluencer
 from project.influencers.standard_influencer import StandardInfluencer
 
@@ -34,10 +36,22 @@ class InfluencerManagerApp:
         return f"Campaign ID {campaign_id} for {brand} is successfully created as a {campaign_type}."
 
     def participate_in_campaign(self, influencer_username: str, campaign_id: int):
-        if self._find_inluencer_name(influencer_username) is None:
+        influencer = self._find_inluencer_name(influencer_username)
+        if influencer is None:
             return f"Influencer '{influencer_username}' not found."
-        if self._find_id_compaign(campaign_id):
+        campaign = self._find_id_compaign(campaign_id)
+        if campaign is None:
             return f"Campaign with ID {campaign_id} not found."
+
+        if not campaign.check_eligibility(influencer.engagement_rate):
+            return f"Influencer '{influencer_username}' does not meet the eligibility criteria for the campaign with ID {campaign_id}."
+
+        influencer_payment = influencer.calculate_payment(campaign)
+        if influencer_payment > 0.0:
+            campaign.approved_influencers.append(influencer)
+            campaign.budget -= influencer_payment
+            influencer.campaigns_participated.append(campaign)
+            return f"Influencer '{influencer_username}' has successfully participated in the campaign with ID {campaign_id}."
 
     def calculate_total_reached_followers(self):
         pass
