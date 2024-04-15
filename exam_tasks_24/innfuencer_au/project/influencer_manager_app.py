@@ -71,7 +71,7 @@ class InfluencerManagerApp:
         influencer = self._get_influencer(username)
         if influencer:
             return influencer.display_campaigns_participated()
-
+ 
     def campaign_statistics(self):
         total_reached_followers = self.calculate_total_reached_followers()
 
