@@ -30,7 +30,7 @@ class HorseRaceApp:
         return f"Jockey {jockey_name} is added."
 
     def create_horse_race(self, race_type: str):
-        if race_type in ["Winter", "Spring", "Autumn", "Summer"]:
+        if race_type not in ["Winter", "Spring", "Autumn", "Summer"]:
             raise Exception(f"Race {race_type} has been already created!")
         new_race = HorseRace(race_type)
         self.horse_races.append(new_race)
