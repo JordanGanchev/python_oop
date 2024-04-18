@@ -52,13 +52,13 @@ class SphereRestaurantApp:
         return client.apply_discount()
 
     def generate_report(self):
-        return f"$$ Monthly Report $$\n" \
-               f"Total Earnings: ${total_earnings}\n" \
-               f"Total Clients Unused Points: {total_client_points}\n" \
-               f"Total Clients Count: {clients_count}\n" \
-               f"** Waiter Details **\n" \
-               f"Name: {name1}, Total earnings: ${waiter1_total_earnings}" \
-               f"Name: {name2}, Total earnings: ${waiter2_total_earnings}"
+        # return f"$$ Monthly Report $$\n" \
+        #        f"Total Earnings: ${total_earnings}\n" \
+        #        f"Total Clients Unused Points: {total_client_points}\n" \
+        #        f"Total Clients Count: {clients_count}\n" \
+        #        f"** Waiter Details **\n" \
+        #        f"Name: {name1}, Total earnings: ${waiter1_total_earnings}" \
+        #        f"Name: {name2}, Total earnings: ${waiter2_total_earnings}"
         pass
 
     def _find_waiter_name(self, name):
