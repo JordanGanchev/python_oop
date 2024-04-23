@@ -59,7 +59,26 @@ class SphereRestaurantApp:
         #        f"** Waiter Details **\n" \
         #        f"Name: {name1}, Total earnings: ${waiter1_total_earnings}" \
         #        f"Name: {name2}, Total earnings: ${waiter2_total_earnings}"
-        pass
+
+                # Sort waiters by total earnings in descending order
+        sorted_waiters = sorted(self.waiters, key=lambda w: w.calculate_earnings(), reverse=True)
+
+        # Get detailed information for each waiter
+        waiter_info = "** Waiter Details **\n"
+        for waiter in sorted_waiters:
+            waiter_info += str(waiter) + "\n"
+
+        total_earnings = sum(waiter.calculate_earnings() for waiter in self.waiters)
+        total_client_points = sum(client.points for client in self.clients)
+        total_clients = len(self.clients)
+
+        report = f"$$ Monthly Report $$\n"
+        report += f"Total Earnings: ${total_earnings:.2f}\n"
+        report += f"Total Clients Unused Points: {total_client_points}\n"
+        report += f"Total Clients Count: {total_clients}\n"
+        report += waiter_info
+
+        return report.strip()
 
     def _find_waiter_name(self, name):
         return next((n for n in self.waiters if n.name == name), None)
